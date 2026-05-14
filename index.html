@@ -1,19 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>First Project</title>
-<link rel="stylesheet" href="styles.css"></head>
-<body>
-    <h1>This is the world of coding in HTML</h1>
-    <h2>I don't know what I'm doing.</h2>
-    <h3>But I am here for it.</h3>
-    <h4>F@%# Yeah</h4>
-    <h5>You want to stuck in a loop?</h5>
-    <a href="https://chad-newcombe.github.io/First-github-project/"> "LOOP"</a>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PawFind Directory | Discover the Best Pet Products</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='38' r='16' fill='%23ff8f3c'/%3E%3Ccircle cx='20' cy='18' r='8' fill='%232f855a'/%3E%3Ccircle cx='44' cy='18' r='8' fill='%232f855a'/%3E%3Ccircle cx='12' cy='30' r='6' fill='%232f855a'/%3E%3Ccircle cx='52' cy='30' r='6' fill='%232f855a'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">🐾 PawFind</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="category.html?category=Dogs">Categories</a>
+      </nav>
+      <div class="header-search">
+        <input id="global-search" type="search" placeholder="Search products..." autocomplete="off" />
+        <ul id="autocomplete-list" class="autocomplete-list"></ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>Find trusted products for every pet you love.</h1>
+        <p>Browse curated gear, food, toys, wellness essentials, and habitats across all major pet categories.</p>
+        <form class="hero-search" action="products.html">
+          <input type="search" name="q" placeholder="Search by product or brand" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Featured Categories</h2>
+      <div id="category-grid" class="category-grid"></div>
+    </section>
+
+    <section class="section container">
+      <div class="section-head">
+        <h2>Trending Products</h2>
+        <a href="products.html" class="link-btn">View all</a>
+      </div>
+      <div id="trending-products" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>PawFind</h3>
+        <p>Your pet product discovery companion.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="products.html">Directory</a>
+        <a href="category.html?category=Cats">Categories</a>
+      </div>
+      <div>
+        <h4>Newsletter</h4>
+        <form class="newsletter">
+          <input type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
